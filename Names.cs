@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace LEARN_TESTS
 {
-	public class Calculator
+	public class Names
 	{
-		public int Add(int a, int b)
+		public string NickName { get; set; }
+		public string MakeFullName(string firstName, string lastName)
 		{
-			return a + b;
-		}
-
-		public double AddDouble(double a, double b)
-		{
-			return a + b;
+			return $"{firstName} {lastName}";
 		}
 	}
 }
